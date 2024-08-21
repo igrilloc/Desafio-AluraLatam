@@ -43,9 +43,3 @@ La página web cuenta con campos para que el usuario pueda ingresar el texto que
 inserción del texto que será encriptado o desencriptado, y el usuario debe poder escoger entre as dos opciones.
 - ✅ El resultado debe ser mostrado en la pantalla.
 - ✅ Un botón que copie el texto encriptado/desencriptado para la sección de transferencia, o sea que tenga la misma funcionalidad del ctrl+C o de la opción "copiar" del menú de las aplicaciones.
-
-# Autor
-
-[![Linkedin](https://img.shields.io/badge/Linkedin-0072b1?logo=linkedin&logoColor=white&style=for-the-badge)](https://www.linkedin.com/in/igrilloc/)
-
-[![GitHub](https://img.shields.io/badge/patrickwebsdev-black?logo=github&logoColor=FFFFFF&style=for-the-badge)]([https://github.com/patrickwebsdev](https://github.com/igrilloc))
