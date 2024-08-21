@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Encriptador | Oracle + Alura</title>
+        
+        <meta name="keywords" content="Encriptador, Oracle, Alura, Proyecto">
+        <meta name="title" content="Encriptador | Oracle + Alura">
+        <meta name="description" content="Proyecto propuesto por ONE (Oracle Next Education) + Alura utilizando HTML, SASS y Javascript">
+        <meta name="author" content="Ignacio Grillo Caimary">
+        
+        <link rel="stylesheet" href="style.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    </head>
+    
+    <body>
+        
+        <main class="main">
+            
+            <section class="main__logo">
+                <h1 class="main__h1"><img class="main__img" src="/images/Logo.png" alt="Alura Logo"></h1>
+            </section>
+            
+            <section class="main__form">
+                <textarea class="main__textarea" name="mensaje" id="mensaje" placeholder="Ingrese el texto aqui"></textarea>
+                <div class="main__footer">
+                    <div class="main__small">
+                        <small>Solo letras minúsculas y sin acentos</small>
+                    </div>
+                    <div class="main__buttons">
+                        <button class="main__button main__button-primary" id="encriptar">Encriptar</button>
+                        <button class="main__button main__button-secondary" id="desencriptar">Desencriptar</button>
+                    </div>
+                </div>
+            </section>
+            
+            <aside class="aside">
+                <section class="aside__content" id="ningunMensaje">
+                    <div class="aside__img">
+                        <img src="/images/Muñeco.png" alt="Ningun mensaje encontrado - imagen">
+                    </div>
+                    <div class="aside__text aside__none">
+                        <h2 class="aside__h2">Ningún mensaje fue encontrado</h2>
+                        <p class="aside__p">Ingresa el texto que desees encriptar o desencriptar</p>
+                    </div>
+                </section>
+                <section class="aside__content aside__content-between aside__content--none" id="mensajeEncontrado">
+                    <div class="aside__message">
+                        <p class="aside__encrypt" id="mensajeEncriptado">Hola</p>
+                    </div>
+                    <button class="aside__button bubbly-button" id="copiarMensaje">Copiar</button>
+                </section>
+            </aside>
+        
+        </main>
+        
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="footer__links">
+                    <a href="https://github.com/igrilloc" target="_blank" class="footer__links-link">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                    <a href="https://www.linkedin.com/in/igrilloc/" target="_blank" class="footer__links-link">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+                    <a href="https://portfolio-2023-ignacio-grillo-caimary.vercel.app/" target="_blank" class="footer__links-link">
+                        <i class="fas fa-briefcase"></i> Portfolio
+                    </a>
+                    <a href="mailto:ignaciogrillocaimary@gmail.com" class="footer__links-link">
+                        <i class="fas fa-envelope"></i> Gmail
+                    </a>
+                </div>
+                <p class="footer__text">&copy; 2024 Desafio Alura Latam & Oracle. Creado por Ignacio Grillo Caimary.</p>
+            </div>
+        </footer>
+        
+        <div class="modal" id="modal">
+            <div class="modal__container">
+                <div class="modal__header">
+                    <h3 class="modal__title">Error</h3>
+                </div>
+                <div class="modal__body">
+                    <p class="modal__p">El texto no puede contener mayusculas y/o caracteres especiales</p>
+                </div>
+                <div class="modal__footer">
+                    <button class="modal__button" id="modalButton">Entendido</button>
+                </div>
+            </div>
+        </div>
+    
+        <script src="script.js"></script>
+    
+    </body>
+</html>
